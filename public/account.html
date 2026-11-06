@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My bookings | {{name}}</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#231a33">
+  <script src="/js/theme.js"></script>
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<!--#header-->
+<main id="main">
+  <div class="wrap">
+    <div class="page-head">
+      <h1>My bookings</h1>
+      <p class="muted" id="who"></p>
+    </div>
+    <section aria-labelledby="upcoming-title">
+      <h2 class="sub-title" id="upcoming-title">Upcoming</h2>
+      <div id="upcoming"><p class="muted">Loading your bookings</p></div>
+    </section>
+    <section aria-labelledby="history-title">
+      <h2 class="sub-title" id="history-title">Past bookings</h2>
+      <div id="history"></div>
+    </section>
+  </div>
+</main>
+<!--#footer-->
+<script type="module" src="/js/account.js"></script>
+</body>
+</html>

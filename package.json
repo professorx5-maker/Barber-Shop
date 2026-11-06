@@ -1,0 +1,15 @@
+{
+  "name": "gloria-hair-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gloria Hair Studio website with online booking, customer accounts and an owner dashboard. No dependencies.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test"
+  },
+  "license": "UNLICENSED"
+}

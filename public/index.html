@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{name}} | Haircuts, grooming and hair care, open 24 hours</title>
+  <meta name="description" content="{{name}}: haircuts, fades, beard, facials, nails and hair treatments by professional barbers. Open 24 hours, 365 days a year. Book online.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#231a33">
+  <script src="/js/theme.js"></script>
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<!--#header-->
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>{{name}}</h1>
+        <p class="lead">Haircuts, fades, beard care, facials, nails and every kind of hair treatment, by professional barbers. Open all day and all night.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/book.html">Book a chair</a>
+          <a class="btn" href="#services">See prices</a>
+        </div>
+        <p class="offer"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2c.6 4.8 2.6 7.4 8 10-5.4 2.6-7.4 5.2-8 10-.6-4.8-2.6-7.4-8-10 5.4-2.6 7.4-5.2 8-10Z" fill="currentColor"/></svg>Heavy discounts on men&rsquo;s grooming</p>
+      </div>
+      <div class="hero-side">
+        <div class="dial-wrap" id="dial"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="board-band" aria-label="Open chairs">
+    <div class="wrap">
+      <div class="plate" id="open-board" aria-live="polite">
+        <div class="plate-head"><h2>Open chairs</h2></div>
+        <p class="plate-body muted">Checking the chairs</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="wrap">
+      <h2 class="section-title">Services and prices</h2>
+      <p class="section-lead">All prices are in Pakistani rupees. A few services show a range, because the price depends on the treatment you choose.</p>
+      <ul class="svc-grid" id="service-board"><li class="muted">Loading prices</li></ul>
+
+      <div class="notes-row">
+        <aside class="plate">
+          <div class="plate-head"><h2>Also available</h2></div>
+          <div class="plate-body">
+            <p>All types of haircuts and all types of hair treatments. Ask in the shop or call <a href="tel:{{phoneHref}}">{{phone}}</a> for prices.</p>
+            <ul class="tags">
+              <li>Hair colours</li>
+              <li>Hair keratin</li>
+              <li>Hair sticking</li>
+              <li>Hair perms</li>
+              <li>Permanent blow dry</li>
+            </ul>
+          </div>
+        </aside>
+        <aside class="plate">
+          <div class="plate-head"><h2>Before you book</h2></div>
+          <div class="plate-body">
+            <ul class="notes-list">
+              <li>Heavy discounts on men&rsquo;s grooming.</li>
+              <li>Pay at the shop after your service.</li>
+              <li>Cancel online up to {{cancelLead}} before your time.</li>
+              <li>Walk-ins are welcome any time, day or night, whenever a chair is free.</li>
+              <li>Choose a barber, or pick any barber to get the first open chair.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="barbers">
+    <div class="wrap">
+      <h2 class="section-title">Our professional barbers</h2>
+      <div class="barbers" id="barber-list"><p class="muted">Loading barbers</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <div class="wrap split">
+      <div>
+        <h2 class="section-title">Visit the shop</h2>
+        {{addressBlock}}
+        {{visitContact}}
+        <p class="muted">Running late or need to change a booking inside the cancellation window? Call us and we will sort it out.</p>
+        <a class="btn btn-primary" href="/book.html">Book a chair</a>
+      </div>
+      <div class="plate">
+        <div class="plate-head"><h2>Opening hours</h2></div>
+        <div class="plate-body">{{hours}}</div>
+      </div>
+    </div>
+  </section>
+</main>
+<!--#footer-->
+<script type="module" src="/js/home.js"></script>
+</body>
+</html>

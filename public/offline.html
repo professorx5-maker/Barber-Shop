@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You are offline | {{name}}</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#231a33">
+  <script src="/js/theme.js"></script>
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<main id="main">
+  <div class="wrap auth-page">
+    <div>
+      <h1>You are offline.</h1>
+      <p class="lead">Booking needs an internet connection. Reconnect and try again, or call us on {{phone}}.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/book.html">Try again</a>
+        <a class="btn" href="tel:{{phoneHref}}">Call {{phone}}</a>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

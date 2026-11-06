@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | {{name}}</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#231a33">
+  <script src="/js/theme.js"></script>
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<!--#header-->
+<main id="main">
+  <div class="wrap auth-page">
+    <div>
+      <h1>Welcome back.</h1>
+      <p class="lead">Log in to book a chair and manage your bookings.</p>
+    </div>
+    <div class="plate auth-card">
+      <form data-auth-form="login" novalidate>
+        <p class="form-error" data-form-error role="alert"></p>
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+          <p class="field-error" id="email-error" data-error-for="email"></p>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input class="input" id="password" name="password" type="password" autocomplete="current-password" required aria-describedby="password-error">
+          <p class="field-error" id="password-error" data-error-for="password"></p>
+        </div>
+        <label class="check"><input type="checkbox" id="show-pw"> Show password</label>
+        <button class="btn btn-primary btn-block" type="submit">Log in</button>
+      </form>
+      <p class="auth-switch">New here? <a data-switch href="/register.html">Create an account</a></p>
+    </div>
+  </div>
+</main>
+<!--#footer-->
+<script type="module" src="/js/auth.js"></script>
+</body>
+</html>

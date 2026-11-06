@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop dashboard | {{name}}</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#231a33">
+  <script src="/js/theme.js"></script>
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<!--#header-->
+<main id="main">
+  <div class="wrap">
+    <div class="page-head"><h1>Shop dashboard</h1></div>
+
+    <div class="toolbar" id="toolbar" role="group" aria-label="Choose a day"></div>
+    <div class="stats" id="stats"></div>
+
+    <h2 class="sub-title">Bookings</h2>
+    <table class="table">
+      <thead>
+        <tr><th scope="col">Time</th><th scope="col">Customer</th><th scope="col">Service</th><th scope="col">Barber</th><th scope="col">Status</th><th scope="col">Actions</th></tr>
+      </thead>
+      <tbody id="bookings"></tbody>
+    </table>
+
+    <h2 class="sub-title">Services and prices</h2>
+    <div id="services-admin"></div>
+    <p class="muted">Turn a service off to hide it from the booking page. Existing bookings keep their original price.</p>
+  </div>
+</main>
+<!--#footer-->
+<script type="module" src="/js/admin.js"></script>
+</body>
+</html>
